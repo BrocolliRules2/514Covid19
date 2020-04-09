@@ -24,13 +24,18 @@ class Covid(TethysAppBase):
         UrlMap = url_map_maker(self.root_url)
 
         url_maps = (
+            
+            UrlMap(
+                name='home',
+                url='covid',
+                controller='covid.controllers.home'
+            ),
             UrlMap(
                 name='info',
                 url='covid-info',
                 controller='covid.controllers.info'
             ),
          
-              ),
             UrlMap(
                 name='help',
                 url='covid-help',
