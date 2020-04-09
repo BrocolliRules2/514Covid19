@@ -12,7 +12,7 @@ class Covid(TethysAppBase):
     package = 'covid'
     root_url = 'covid'
     color = '#36992A'
-    description = 'This app will help you to be aware of COVID 19'
+    description = 'This app will help to control the spread of COVID 19'
     tags = 'CE514, FinalProject, Covid'
     enable_feedback = False
     feedback_emails = []
@@ -37,9 +37,9 @@ class Covid(TethysAppBase):
             ),
          
             UrlMap(
-                name='help',
-                url='covid-help',
-                controller='covid.controllers.help'
+                name='map',
+                url='covid-map',
+                controller='covid.controllers.map'
             ),
             
         )
