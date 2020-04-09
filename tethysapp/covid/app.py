@@ -8,7 +8,7 @@ class Covid(TethysAppBase):
 
     name = 'Covid 514 Project'
     index = 'covid:home'
-    icon = 'covid/images/icon.gif'
+    icon = 'covid/images/covid.gif'
     package = 'covid'
     root_url = 'covid'
     color = '#36992A'
