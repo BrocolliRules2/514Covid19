@@ -2,6 +2,24 @@ from django.shortcuts import render
 from tethys_sdk.permissions import login_required
 from tethys_sdk.gizmos import Button
 
+
+@login_required()
+def info(request):
+    """
+    Controller for the Directory page.
+    """
+    context = {}
+    return render(request, 'covid/info.html', context)
+
+@login_required()
+def help(request):
+    """
+    Controller for the Information page.
+    """
+    context = {}
+    return render(request, 'covid/help.html', context)
+
+
 @login_required()
 def home(request):
     """
