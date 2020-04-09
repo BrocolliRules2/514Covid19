@@ -11,8 +11,8 @@ class Covid(TethysAppBase):
     icon = 'covid/images/icon.gif'
     package = 'covid'
     root_url = 'covid'
-    color = '#16a085'
-    description = 'This app will help you deter'
+    color = '#36992A'
+    description = 'This app will help you to be aware of COVID 19'
     tags = 'CE514, FinalProject, Covid'
     enable_feedback = False
     feedback_emails = []
@@ -25,10 +25,18 @@ class Covid(TethysAppBase):
 
         url_maps = (
             UrlMap(
-                name='home',
-                url='covid',
-                controller='covid.controllers.home'
+                name='info',
+                url='covid-info',
+                controller='covid.controllers.info'
             ),
+         
+              ),
+            UrlMap(
+                name='help',
+                url='covid-help',
+                controller='covid.controllers.help'
+            ),
+            
         )
 
         return url_maps
