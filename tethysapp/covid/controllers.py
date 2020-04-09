@@ -12,12 +12,12 @@ def info(request):
     return render(request, 'covid/info.html', context)
 
 @login_required()
-def help(request):
+def map(request):
     """
     Controller for the Information page.
     """
     context = {}
-    return render(request, 'covid/help.html', context)
+    return render(request, 'covid/map.html', context)
 
 
 @login_required()
